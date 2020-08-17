@@ -1,0 +1,26 @@
+http://cs-forum.tainan-westernfood.com/mng/main.php
+
+===========================================================
+
+核價單號
+C190903001
+
+子公司客戶為 吳佳旻 AWC0180
+母公司為吳進興 AWC0070
+財務反應說, 只會抓到母公司的價格
+
+
+要取得新KEY 是用 ：
+EXEC @Severity = dbo.SetNextKeySp 
+
+
+這個SP 是寫入註冊NextKeys_mst 用
+取得號碼要用 NextKeySp 
+可以不用執行SetNextKeySp, 這樣沒寫入NextKeys_mst
+在下次取號時, 是去真實table 讀相同Prefix最後一號,也是可以的
+客製的ns_price_book 即不實際註刪
+
+
+13:37 IT_AllenWang 第一次設定才作 SetNextKeySp
+我若要取號只要要用 NextKeySp 對嗎？
+13:40 陳錫勛(Jason Chen) 如上言, SetNextKeySp 不一定要用, 如果要用,其他sp有新增及取號也要一致使用

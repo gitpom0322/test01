@@ -1,0 +1,40 @@
+﻿public string VenId { get; set; }
+public string VenName { get; set; }
+public string Category { get; set; }
+
+a.vend_num,b.name,a.category 
+
+-----------------------------
+
+1. 歷史初次資料會出錯- bug 第一次取不到,需切換頁籤
+2. 送出後,搜尋會有問題~
+
+
+grep /etc/amavis/conf.d/* -e whitelist
+
+
+
+wordpress
+
+find / -name "*.conf" -exec grep -H "wordpress" {} \;
+
+placeholder="請選取供應商"
+
+vendor_name
+
+-----------------------------
+新增供應商欄位-有變動的資料
+
+table
+AppBird_OrderItem
+
+
+SP
+AppBird_OrderItem_Add
+
+AppBird_ERP_OrderItemAdd_Step2
+
+
+FEED_App.dbo.Ns_GenNsAppBirdCoLine2Sp
+
+-----------------------------
